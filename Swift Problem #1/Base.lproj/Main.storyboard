@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Swift_Problem__1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What's Your Name?" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="4X2-2d-YEZ">
+                                <rect key="frame" x="20" y="68" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kDA-yf-tnp">
+                                <rect key="frame" x="20" y="162" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nOW-ky-pgn">
+                                <rect key="frame" x="258" y="240" width="85" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="9ie-E2-T04"/>
+                                </constraints>
+                                <state key="normal" title="Say Hi!">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="setLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="flD-FH-ESH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.5442313762626263" green="0.13245528948875959" blue="0.19929661676842964" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="kDA-yf-tnp" firstAttribute="top" secondItem="4X2-2d-YEZ" secondAttribute="bottom" constant="64" id="6MS-FF-aw9"/>
+                            <constraint firstItem="4X2-2d-YEZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="48" id="G0v-vb-ZLr"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="4X2-2d-YEZ" secondAttribute="leading" id="S91-dm-hcZ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="kDA-yf-tnp" secondAttribute="leading" id="VhP-cw-9YT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kDA-yf-tnp" secondAttribute="trailing" id="ejy-VO-Ixm"/>
+                            <constraint firstItem="nOW-ky-pgn" firstAttribute="top" secondItem="kDA-yf-tnp" secondAttribute="bottom" constant="57" id="f5P-BF-fCP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4X2-2d-YEZ" secondAttribute="trailing" id="jTT-DU-yQ8"/>
+                            <constraint firstItem="nOW-ky-pgn" firstAttribute="centerX" secondItem="kDA-yf-tnp" secondAttribute="centerX" id="nbm-9G-DC3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="greetingLabel" destination="kDA-yf-tnp" id="bg9-fm-NBS"/>
+                        <outlet property="nameTextField" destination="4X2-2d-YEZ" id="Xqn-AV-ZED"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440" y="389"/>
+        </scene>
+    </scenes>
+</document>
